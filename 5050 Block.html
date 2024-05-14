@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50-50 Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+
+    .flip{
+        width: 100%;
+        display: flex;
+    }
+
+    .image{
+        height: 555px;
+        width:50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover
+    }
+
+    .text{
+        height: 555px;
+        width: 50%
+    }
+
+    .textcontainer{
+        margin-left: 80px;
+        margin-right: 150px;
+    }
+
+    .textcontainer2{
+        margin-right: 80px;
+        margin-left: 150px;
+    }
+
+    .eyebrowtext{
+        width: fit-content;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 700;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    h2{
+        width: fit-content;
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight: 350;
+        margin-bottom: 16px;
+    }
+
+    .desc{
+        width: fit-content;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .btn{
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .btn a{
+        text-decoration: none;
+        color:#0276b1 ;
+    }
+
+    .btn a:hover{
+        text-decoration: underline;
+    }
+
+    .btn img{
+        margin-left: 8px;
+    }
+
+    @media screen and (min-width: 1450px){
+    .textcontainer{
+        margin-left: 80px;
+        margin-right: 300px;
+        }
+
+    .textcontainer2{
+        margin-right: 80px;
+        margin-left: 300px;
+        }
+    }
+
+  @media screen and (max-width: 1023px) {
+        .container{
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        .eyebrowtext{
+            margin-top: 45px;
+            margin-bottom: 30px;
+        }
+
+        .image{
+            width: 100%;
+            height: 225px;
+        }
+
+        .text{
+            width: 100%;
+            height: fit-content;
+        }
+
+        .textcontainer{
+            margin-left: 25px;
+            margin-right: 20px;
+        }
+
+        .textcontainer2{
+            margin-left: 25px;
+            margin-right: 20px;
+        }
+
+        .flip{
+            flex-direction: column-reverse;
+        }
+  }
+
+</style>
+
+<body>
+<div class="container">
+    <div style="background-image: url(test1.png);" class="image" alt="Image of person entering card inforation in a machine."></div>
+    <div class="text">
+        <div class="textcontainer">
+            <p class="eyebrowtext">EYEBROW TEXT</p>
+            <H2>Title Text or Heading Text</H2>
+            <p class="desc">
+                Descripton text, body text, main body text, paragraph text, rich text, 
+                whatever you want to call it, it is still text.</p>
+            <div class="btn">
+                <a href="index.html">This is a button</a>
+                <img style="height: 8px; width: 8px;" src="Vector (1).svg">
+            </div>    
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="flip">
+        <div class="text">
+            <div class="textcontainer2">
+                <p class="eyebrowtext">EYEBROW TEXT</p>
+                <H2>Title Text or Heading Text</H2>
+                <p class="desc">
+                    Descripton text, body text, main body text, paragraph text, rich text, 
+                    whatever you want to call it, it is still text.</p>
+                <div class="btn">
+                    <a href="index.html">This is a button</a>
+                    <img style="height: 8px; width: 8px;" src="Vector (1).svg">
+                </div> 
+            </div>
+              
+        </div>
+        <div style="background-image: url(test3.png);" class="image" alt="Image of person entering card inforation in a machine."></div>
+    </div>     
+</div>
+
+    
+</body>
+</html>

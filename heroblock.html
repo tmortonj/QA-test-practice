@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .heroblock{
+        width: 100%;
+        height: 560px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+    }
+
+    .textcontainer{
+        background-color: rgba(255, 255, 255, 0.938);
+        height: fit-content;
+        width: fit-content;
+        margin: 70px 0px 0px 325px;
+        border-radius: 4px; 
+    }
+
+    .herotext{
+        margin: 40px;
+    }
+
+    .eyebrowtext{
+        width: fit-content;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+   h2{
+        width: fit-content;
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight: 350;
+        margin-bottom: 12px;
+   }
+
+   .description{
+        font-size: 16px;
+        width: 390px;
+   }
+
+   .btn{
+        margin-top: 35px;
+        margin-bottom: 10px;
+        background-color: #0276b1;
+        color: white;
+        width: fit-content;
+        padding: 14px;
+        border-radius: 4px;
+        font-weight: 600;
+   }
+
+   .btn:hover{
+        background-color: #255f82;
+   }
+
+   a{
+        text-decoration: none;
+        color: white;
+   }
+
+   @media screen and (max-width:1440px){
+        .heroblock{
+            height: 510px;
+        }
+
+        .textcontainer{
+            margin: 70px 0px 0px 180px;
+        }
+   }
+
+   @media screen and (max-width:767px){
+        .textcontainer{
+            width: 90%;
+            margin: 200px auto 0px auto;
+            background-color: #f4f4f4;
+        }
+
+        .herotext{
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            
+        }
+
+        .heroblock{
+            height: 260px;
+        }
+
+        .description{
+            width: fit-content;
+        }
+   }
+
+  @media screen and (max-width:390px){
+       .textcontainer{
+            margin-top: 235px;
+
+       }
+
+       .herotext{
+            margin-top: 20px;
+            margin-bottom: 30px;
+       }
+
+       .btn{
+            margin-bottom: 0px;
+            margin-top: 20px;
+       }
+    
+  }
+
+</style>
+
+<body>
+
+    <div style="background-image: url(hero\ image.png);" class="heroblock">
+        <div class="textcontainer">
+            <div class="herotext">
+                <p class="eyebrowtext">EYEBROW TEXT</p>
+                <h2>Heading Text</h2>
+                <p class="description">Earn one of the best savings rates in America-plus no fees or minimums.</p>
+                <div class="btn"><a href="index.html">CTA button</a></div>
+        </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
